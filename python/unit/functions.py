@@ -1,10 +1,7 @@
-def add(x, y):
-    return x + y
+from selenium.webdriver.common.by import By
 
-def test_addition():
-    assert add(1, 2) == 3
+class MainPageLocators(object):
+    G0_BUTTON = (By.ID, "submit")
 
-def test_addition_negative_numbers():
-    assert add(-1, -1) == -2
-
-test_addition()
+class SearchResultsPageLocators(object):
+    pass 
